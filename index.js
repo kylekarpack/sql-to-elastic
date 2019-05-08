@@ -10,12 +10,17 @@ class App {
 	 * Exits on completion
 	 */
 	async run() {
-		const sqlData = await this.getSqlData();
-		fs.writeFileSync("./output/sql-results.json");
-		const result = await this.insertElasticData(sqlData);
-		// eslint-disable-next-line no-undef
-		process.exit();
-		return result;
+		try {
+			const sqlData = await this.getSqlData();
+			fs.mkdirSync("output", { recursive: true });
+			//fs.writeFileSync("./output/sql-results.json", JSON.stringify(sqlData));
+			const result = await this.insertElasticData(sqlData);
+			// eslint-disable-next-line no-undef
+			process.exit();
+			return result;
+		} catch (err) {
+			throw err;
+		}
 	}
 
 	/**
