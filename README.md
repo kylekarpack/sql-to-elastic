@@ -3,7 +3,7 @@
 ## Usage
 
 1. Run ```yarn install``` or ```npm install``` to install dependencies
-2. Add a file containing private connection options form MSSQL in the following format:
+2. Add a file at ```./config/mssql.config``` containing private connection options for MSSQL in the following format:
 ```json
 {
     "user": "...",
@@ -16,4 +16,18 @@
     }
 }
 ```
-3.
+3. Add a file at ```./config/elastic.config``` containing private connection options for ElasticSearch in the following format:
+```json
+{
+    "client": {
+        "host": "localhost:9200",
+        "log": "trace"
+    },
+    "bulk": {
+        "_index": "index",
+        "_type": "type"
+    }
+}
+```
+4. Add a query to transfer data at ```query.sql```
+5. Run the utility with ```yarn start```/```npm start``` or ```node index.js```
