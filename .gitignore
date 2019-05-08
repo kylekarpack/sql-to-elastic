@@ -76,4 +76,4 @@ typings/
 .fusebox/
 
 query.sql
-connection.json
+config/
