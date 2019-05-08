@@ -77,5 +77,7 @@ typings/
 
 query.sql
 config/
+output/
 
 settings.json
+.vscode/

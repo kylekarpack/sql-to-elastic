@@ -11,6 +11,7 @@ class App {
 	 */
 	async run() {
 		const sqlData = await this.getSqlData();
+		fs.writeFileSync("./output/sql-results.json");
 		const result = await this.insertElasticData(sqlData);
 		// eslint-disable-next-line no-undef
 		process.exit();
