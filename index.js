@@ -1,20 +1,26 @@
-const fs = require("fs");
-const query = fs.readFileSync("./query.sql").toString();
-
-const { MsSqlConnector } = require("./mssql-connection");
+const fs = require("fs"),
+    query = fs.readFileSync("./query.sql").toString(),
+    { MsSqlConnector } = require("./mssql-connection");
 
 class App {
 
+    /**
+     * Run the application
+     * Exits on completion
+     */
     async run() {
         const sqlData = await this.getSqlData();
         console.log(sqlData);
         process.exit();   
     }
 
+    /**
+     * Get data from an SQL query
+     * @returns result
+     */
     async getSqlData() {
-        const mssqlConnection = new MsSqlConnector();
-        let data = await mssqlConnection.query(query);
-        return data;
+        const mssqlConnection = await MsSqlConnector.build();
+        return await mssqlConnection.query(query);
     }
 }
 
