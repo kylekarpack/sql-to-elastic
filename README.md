@@ -8,11 +8,11 @@
 {
     "user": "...",
     "password": "...",
-    "server": "localhost", // You can use "localhost\\instance" to connect to named instance
+    "server": "localhost",
     "database": "...",
  
     "options": {
-        "encrypt": true // Use this if you're on Windows Azure
+        "encrypt": true
     }
 }
 ```
