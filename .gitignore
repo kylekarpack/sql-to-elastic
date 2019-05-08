@@ -74,3 +74,6 @@ typings/
 
 # FuseBox cache
 .fusebox/
+
+query.sql
+connection.json
