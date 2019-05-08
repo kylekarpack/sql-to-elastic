@@ -1,5 +1,5 @@
 const sql = require("mssql"),
-	mssqlConfig = require("./connection.json");
+	mssqlConfig = require("./config/mssql.json");
 
 class MsSqlConnector {
 
@@ -42,7 +42,7 @@ class MsSqlConnector {
 
 		// Issue the request
 		let result = await this.pool.request().query(queryText);
-		return result;
+		return result.recordset;
 	}
 
 }
