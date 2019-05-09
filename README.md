@@ -32,3 +32,11 @@
 4. Add a query to select the total number of rows to transfer at ```total.sql```
 5. Add a query to select data to transfer data at ```query.sql```
 6. Run the utility with ```yarn start```/```npm start``` or ```node index.js```
+
+## Issues
+* Paging is very tightly coupled to named SQL parameters right now. This should be more dynamic
+* Errors are not handled elegantly yet
+
+## Next Steps
+* Package as an npm package
+* Add a CLI
