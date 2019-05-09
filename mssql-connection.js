@@ -28,7 +28,7 @@ class MsSqlConnector {
 	 * @param {string} queryText 
 	 * @returns {Object[]} results
 	 */
-	async query(queryText) {
+	async query(queryText, params) {
 
 		// Ensure that this has been initialized
 		if (!this.pool) {
@@ -41,8 +41,20 @@ class MsSqlConnector {
 		}
 
 		// Issue the request
-		let result = await this.pool.request().query(queryText);
-		return result.recordset;
+		try {
+			let result = this.pool.request();
+			
+			if (params) {
+				for (let key in params) {
+					result = result.input(key, sql.Int, params[key]);
+				}
+			}
+			
+			result = await result.query(queryText);
+			return result.recordset;
+		} catch (err) {
+			throw err;
+		}
 	}
 
 }

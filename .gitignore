@@ -76,6 +76,7 @@ typings/
 .fusebox/
 
 query.sql
+total.sql
 config/
 output/
 

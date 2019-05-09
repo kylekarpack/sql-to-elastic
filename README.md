@@ -29,5 +29,6 @@
     }
 }
 ```
-4. Add a query to transfer data at ```query.sql```
-5. Run the utility with ```yarn start```/```npm start``` or ```node index.js```
+4. Add a query to select the total number of rows to transfer at ```total.sql```
+5. Add a query to select data to transfer data at ```query.sql```
+6. Run the utility with ```yarn start```/```npm start``` or ```node index.js```

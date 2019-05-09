@@ -3,8 +3,16 @@ const elasticsearch = require("elasticsearch"),
 
 class ElasticConnector {
 
-	constructor() {
-		this.client = new elasticsearch.Client(elasticConfig.client);
+	constructor(client) {
+		if (!client) {
+			throw "Cannot be called directly. Please call ElasticConnector.build() to build an instance of this class";
+		}
+		this.client = client;
+	}
+
+	static build() {
+		const client = new elasticsearch.Client(elasticConfig.client);
+		return new ElasticConnector(client);
 	}
 
 	/**
