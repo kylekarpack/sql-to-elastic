@@ -16,6 +16,7 @@ class MsSqlConnector {
 	 */
 	static async build() {
 		try {
+			// Ensure we can connect successfully
 			const pool = await sql.connect(mssqlConfig);
 			return new MsSqlConnector(pool);
 		} catch (err) {
@@ -44,14 +45,22 @@ class MsSqlConnector {
 		try {
 			let result = this.pool.request();
 			
+			// Add in all params
 			if (params) {
 				for (let key in params) {
+					// ToDo: Handle param types as needed
 					result = result.input(key, sql.Int, params[key]);
 				}
 			}
 			
-			result = await result.query(queryText);
-			return result.recordset;
+			// Issue the query
+			try {
+				result = await result.query(queryText);
+				return result.recordset;
+			} catch (err) {
+				throw err;
+			}
+			
 		} catch (err) {
 			throw err;
 		}

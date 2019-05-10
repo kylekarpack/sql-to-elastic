@@ -10,6 +10,10 @@ class ElasticConnector {
 		this.client = client;
 	}
 
+	/**
+	 * Build an instance of the ElasticConnector
+	 * @returns instance with the elastic connection initialized
+	 */
 	static build() {
 		const client = new elasticsearch.Client(elasticConfig.client);
 		return new ElasticConnector(client);
