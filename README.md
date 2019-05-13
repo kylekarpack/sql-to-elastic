@@ -12,7 +12,7 @@
  ```
 
 
- ## Usage
+## Usage
 ```
 $ sql-to-elastic [options]
 
