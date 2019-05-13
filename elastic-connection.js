@@ -63,6 +63,4 @@ class ElasticConnector {
 
 }
 
-module.exports = {
-	ElasticConnector
-};
+module.exports = ElasticConnector;

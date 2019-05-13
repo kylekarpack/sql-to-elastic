@@ -68,6 +68,4 @@ class MsSqlConnector {
 
 }
 
-module.exports = {
-	MsSqlConnector
-};
+module.exports = MsSqlConnector;
