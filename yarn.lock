@@ -185,10 +185,10 @@ ecdsa-sig-formatter@1.0.11:
   dependencies:
     safe-buffer "^5.0.1"
 
-elasticsearch@^16.0.0:
-  version "16.0.0"
-  resolved "https://registry.yarnpkg.com/elasticsearch/-/elasticsearch-16.0.0.tgz#39cf4d45bd806b443c0970379fce7cb216c233e4"
-  integrity sha512-R2pHVWdJs9L2+ZghwAHjAEyQq4B0WVkWVPxlUtLMTyeBXlh4Y0Z+3VnW2+zaud4PRFBiAaTyKzfxD7TgMqpMJA==
+elasticsearch@^16.7.1:
+  version "16.7.1"
+  resolved "https://registry.yarnpkg.com/elasticsearch/-/elasticsearch-16.7.1.tgz#925f263cd1c1e9ff76bd244cb769b93e15aca1db"
+  integrity sha512-PL/BxB03VGbbghJwISYvVcrR9KbSSkuQ7OM//jHJg/End/uC2fvXg4QI7RXLvCGbhBuNQ8dPue7DOOPra73PCw==
   dependencies:
     agentkeepalive "^3.4.1"
     chalk "^1.0.0"
