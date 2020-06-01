@@ -238,7 +238,7 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-generic-pool@^3.6.1:
+generic-pool@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-3.7.1.tgz#36fe5bb83e7e0e032e5d32cd05dc00f5ff119aa8"
   integrity sha512-ug6DAZoNgWm6q5KhPFA+hzXfBLFQu5sTXxPpv44DmE0A2g+CiHoq9LTVdkXpZMkYVMoGw83F6W+WT0h0MFMK/w==
@@ -382,13 +382,13 @@ ms@^2.0.0, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
 
-mssql@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/mssql/-/mssql-5.1.0.tgz#a06d75866802a8e7e8b69df6a2dc7d2ada82bc4b"
-  integrity sha512-eHrqRWCEBaXo48y2ZBaDleFvrWm2vYm6dNm1ci0XLYxm6kUb4KRsvjl74iKFhfYyuF9z6qzmTe/QmoQk+YVcVw==
+mssql@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/mssql/-/mssql-5.1.1.tgz#e2ddb859fd3c4a086e7b7ef953a8d7d5467a5486"
+  integrity sha512-1UcknF7D4YfnrfMzR+FYUUswEREB110z1nD0Ncydt+6PT9Joj2w4xAJCQ1fSeKIeM4NrlZjQOaCTw5qU1zmZQA==
   dependencies:
     debug "^3.2.6"
-    generic-pool "^3.6.1"
+    generic-pool "^3.7.1"
     tedious "^4.2.0"
 
 native-duplexpair@^1.0.0:
