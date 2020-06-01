@@ -8,10 +8,10 @@
 	"license": "MIT",
 	"private": false,
 	"dependencies": {
-		"async": "^2.6.2",
-		"commander": "^2.20.0",
+		"async": "^2.6.3",
+		"commander": "^2.20.3",
 		"elasticsearch": "^16.7.1",
-		"mssql": "^5.1.0"
+		"mssql": "^5.1.1"
 	},
 	"scripts": {
 		"start": "node index.js --max_old_space_size=4096"
