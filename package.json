@@ -2,7 +2,7 @@
 	"name": "sql-to-elastic",
 	"preferGlobal": true,
 	"bin": "index.js",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"main": "index.js",
 	"author": "Kyle Karpack <kylekarpack@gmail.com>",
 	"license": "MIT",
