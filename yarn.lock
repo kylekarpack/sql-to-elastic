@@ -394,10 +394,10 @@ ms@^2.0.0, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
 
-mssql@^5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/mssql/-/mssql-5.1.3.tgz#03ae3cca9c2990cbd1efbe53e25842b582009396"
-  integrity sha512-Nz2rEXiR5NTW+Fe/rnZs9FE9wyNyZ3vgkuHHbmanlXyAtKl2GqtO05t9aSFjswoUJEaeTnGMpKd9hhudnLIEDg==
+mssql@^5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/mssql/-/mssql-5.1.4.tgz#70378857651b77ce58320923a705a33ccffd555d"
+  integrity sha512-gyVAblm18RexdesxQubaLawjOyT8tPtBHuD2bdpoMYtythoJ8/Xs+DPYbdkNWOb2oU0uZrC87TdKVZhDWLwwlw==
   dependencies:
     debug "^3.2.6"
     generic-pool "^3.7.1"
