@@ -160,10 +160,10 @@ date-utils@*:
   resolved "https://registry.yarnpkg.com/date-utils/-/date-utils-1.2.21.tgz#61fb16cdc1274b3c9acaaffe9fc69df8720a2b64"
   integrity sha1-YfsWzcEnSzyayq/+n8ad+HIKK2Q=
 
-debug@^3.2.6:
-  version "3.2.6"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
-  integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
+debug@^3.2.7:
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
+  integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
   dependencies:
     ms "^2.1.1"
 
@@ -245,10 +245,10 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-generic-pool@^3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-3.7.1.tgz#36fe5bb83e7e0e032e5d32cd05dc00f5ff119aa8"
-  integrity sha512-ug6DAZoNgWm6q5KhPFA+hzXfBLFQu5sTXxPpv44DmE0A2g+CiHoq9LTVdkXpZMkYVMoGw83F6W+WT0h0MFMK/w==
+generic-pool@^3.7.2:
+  version "3.7.8"
+  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-3.7.8.tgz#202087bf5ec5e0b3bae39842a0ef98bcd4c1e450"
+  integrity sha512-Pz93INFSbhjEROVbM91rurD05G+Kx8833rG+lVU57mznEBpzkc1f5/g+d511a1Yf8dbAEsm7DDA3QLytMFbiGA==
 
 getpass@^0.1.1:
   version "0.1.7"
@@ -394,13 +394,13 @@ ms@^2.0.0, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
 
-mssql@^5.1.4:
-  version "5.1.4"
-  resolved "https://registry.yarnpkg.com/mssql/-/mssql-5.1.4.tgz#70378857651b77ce58320923a705a33ccffd555d"
-  integrity sha512-gyVAblm18RexdesxQubaLawjOyT8tPtBHuD2bdpoMYtythoJ8/Xs+DPYbdkNWOb2oU0uZrC87TdKVZhDWLwwlw==
+mssql@^5.1.5:
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/mssql/-/mssql-5.1.5.tgz#19c587bf14ba7cb00bd487a1232f21f4ed364f69"
+  integrity sha512-/OdMuZL4PUFwoPd+bnfmxeTwmDZVvHt05LSMOLkMUX8hD1sX092Ag3gTgKmiQwB3K6EkmTxxh4Mgo/M4dqxP6Q==
   dependencies:
-    debug "^3.2.6"
-    generic-pool "^3.7.1"
+    debug "^3.2.7"
+    generic-pool "^3.7.2"
     tedious "^4.2.0"
 
 native-duplexpair@^1.0.0:
