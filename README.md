@@ -1,5 +1,6 @@
 # sql-to-elastic
 
+Note that this repository is not under active development
 
 ## Installation
 
